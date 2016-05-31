@@ -1,0 +1,28 @@
+{
+  "name": "vcard-cv",
+  "private": true,
+  "dependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+    "polymer": "Polymer/polymer#^1.0.0",
+    "vcard-home": "https://github.com/ylinlee/vcard-home.git#0.0.1",
+    "vcard-toggle-menu": "https://github.com/ylinlee/vcard-toggle-menu.git#0.0.1",
+    "vcard-footer": "https://github.com/ylinlee/vcard-footer.git#0.0.1",
+    "vcard-preloader": "https://github.com/ylinlee/vcard-preloader.git#0.0.1",
+    "vcard-chronological-facts": "https://github.com/ylinlee/chronological-facts.git#0.0.1",
+    "vcard-projects": "git://github.com/vcard/vcard-projects.git#0.0.2",
+    "vcard-project-detail": "git://github.com/vcard/vcard-project-detail.git#0.0.2",
+    "vcard-project-technologies": "https://github.com/ylinlee/vcard-technologies.git#0.0.1"
+  },
+  "ignore": [],
+  "authors": [
+    "YCLIN"
+  ],
+  "description": "personal web",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "vcard"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}
