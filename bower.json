@@ -2,17 +2,17 @@
   "name": "vcard-cv",
   "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#1.0.0",
-    "vcard-home": "git://github.com/ylinlee/vcard-home.git#0.0.2",
-    "vcard-toggle-menu": "git://github.com/ylinlee/vcard-toggle-menu.git#0.0.2",
-    "vcard-footer": "git://github.com/ylinlee/vcard-footer.git#0.0.2",
-    "vcard-preloader": "git://github.com/ylinlee/vcard-preloader.git#0.0.2",
-    "vcard-chronological-facts": "git://github.com/ylinlee/vcard-chronological-facts.git#0.0.2",
-    "vcard-skills": "git://github.com/ylinlee/vcard-skills.git#0.0.1",
-    "vcard-projects": "git://github.com/ylinlee/vcard-projects.git#0.0.3",
-    "vcard-project-detail": "git://github.com/ylinlee/vcard-project-detail.git#0.0.3",
-    "vcard-technologies": "git://github.com/ylinlee/vcard-technologies.git#0.0.2",
-    "iron-media-query": "PolymerElements/iron-media-query#^1.0.8"
+    "polymer": "Polymer/polymer#1.4.0",
+    "vcard-home": "git://github.com/ylinlee/vcard-home.git",
+    "vcard-toggle-menu": "git://github.com/ylinlee/vcard-toggle-menu.git",
+    "vcard-footer": "git://github.com/ylinlee/vcard-footer.git",
+    "vcard-preloader": "git://github.com/ylinlee/vcard-preloader.git",
+    "vcard-chronological-facts": "git://github.com/ylinlee/vcard-chronological-facts.git",
+    "vcard-skills": "git://github.com/ylinlee/vcard-skills.git",
+    "vcard-projects": "git://github.com/ylinlee/vcard-projects.git",
+    "vcard-project-detail": "git://github.com/ylinlee/vcard-project-detail.git",
+    "vcard-technologies": "git://github.com/ylinlee/vcard-technologies.git",
+    "iron-media-query": "PolymerElements/iron-media-query#1.0.8"
   },
   "ignore": [],
   "authors": [
