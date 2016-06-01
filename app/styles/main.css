@@ -1,0 +1,26 @@
+body {
+    overflow-x: hidden;
+    background: #fff;
+    margin: 0;
+    color: #464646;
+    font: 300 13px/20px 'Open Sans', sans-serif;
+}
+body, html {
+    height: 100%;
+}
+
+body, h2 {
+    position: relative;
+}
+.container-fluid, body {
+    padding: 0;
+}
+.lines, .row, p {
+    margin: 0;
+}
+.fill {
+    min-height: 100%;
+}
+.fill, .home-background .container-fluid, .home-background .row, .home-box {
+    height: 100%;
+}

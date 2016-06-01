@@ -13,16 +13,7 @@ window.addEventListener('WebComponentsReady', function(e) {
 			vcard_menu.toggleMenu();
 	}
 
-	//Gestion de alturas
-	var e = {};
-  $('[data-match-height], [data-mh]').each(function() {
-      var self = $(this);
-      var dataMh = self.attr('data-mh') || self.attr('data-match-height');
-      e[dataMh] = dataMh in e ? e[dataMh].add(self) : self;
-  });
-  $.each(e, function() { 
-  	this.matchHeight(!0);
-  });
+  matchElemHeight();
 
   var projectItems = document.querySelectorAll('vcard-project-item');
   var projectItem;
@@ -31,7 +22,25 @@ window.addEventListener('WebComponentsReady', function(e) {
     projectItem.addEventListener('changeCarousel', function (e) {
         var carousel = document.querySelector('vcard-project-detail');
         carousel.changeDetail(e.detail.title);
-  });
+    });
   }
 
+  var projectDetail = document.querySelector('vcard-project-detail');
+  projectDetail.addEventListener('recalculateHeight', function (e) {
+      matchElemHeight();
+  });
+
 });
+
+function matchElemHeight(){
+  //Gestion de alturas
+  var e = {};
+  $('[data-match-height], [data-mh]').each(function() {
+      var self = $(this);
+      var dataMh = self.attr('data-mh') || self.attr('data-match-height');
+      e[dataMh] = dataMh in e ? e[dataMh].add(self) : self;
+  });
+  $.each(e, function() { 
+    this.matchHeight(!0);
+  });
+};
