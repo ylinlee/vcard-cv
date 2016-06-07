@@ -1,0 +1,16 @@
+{
+  "name": "vcard_app",
+  "version": "0.0.1",
+  "description": "polymer application example",
+  "readme": "README.md",
+  "repository": "https://github.com/ylinlee/vcard-cv.git",
+  "scripts": {
+       "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "bower": "^1.7.9"
+  }
+}
