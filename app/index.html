@@ -21,8 +21,8 @@
     <link rel="import" href="bower_components/vcard-toggle-menu/vcard-toggle-menu.html">
     <link rel="import" href="bower_components/vcard-chronological-facts/vcard-chronological-facts.html">
     <link rel="import" href="bower_components/vcard-skills/vcard-skills.html">
+    <link rel="import" href="bower_components/vcard-download-cv/vcard-download-cv.html">
     <link rel="import" href="bower_components/vcard-technologies/vcard-technologies.html">
-    <link rel="import" href="bower_components/vcard-project-detail/vcard-project-detail.html">
     <link rel="import" href="bower_components/vcard-projects/vcard-projects.html">
     <link rel="import" href="bower_components/vcard-preloader/vcard-preloader.html">
     <link rel="import" href="bower_components/vcard-footer/vcard-footer.html">
@@ -37,19 +37,15 @@
     </header>
     <!-- Home -->
     <section id="home" class="fill">
-        <!-- Ejecutamos nuestro componente propio y le decimos que en 'nombre' ponga yoooooo! -->
-        <vcard-home nombre="Yichuan Lin Lee" puesto="Desarollador Javascript"></vcard-home>
+        <vcard-home info='{"fullname":"Yichuan Lin Lee","job":"Desarollador Javascript","email":"lyichuan@gmail.com","tlf":"645255136"}'></vcard-home>
     </section>
-    <!-- end Preloader -->
+    <!-- end Home -->
     <!-- Experience -->
     <section id="experience">
         <div class="container-fluid">
             <div class="row">
-                <!-- Skills -->
-                <!--vcard-skills match-height="match-exp"></vcard-skills-->
-                <!-- end Skills -->
                 <vcard-technologies technologies='[{"imageUrl":"images/technologies/angularjs.png","altText":"Angular"},{"imageUrl":"images/technologies/bootstrap.png","altText":"Bootstrap"},{"imageUrl":"images/technologies/chrome.png","altText":"Chrome"},{"imageUrl":"images/technologies/drupal.png","altText":"Drupal"},{"imageUrl":"images/technologies/git.png","altText":"Git"},{"imageUrl":"images/technologies/html5-css3.png","altText":"Html5-Css3"},{"imageUrl":"images/technologies/javascript.png","altText":"Javascript"},{"imageUrl":"images/technologies/nodejs.png","altText":"Nodejs"},{"imageUrl":"images/technologies/php.png","altText":"Php"},{"imageUrl":"images/technologies/polymer.png","altText":"Polymer"}]' match-height="match-exp"></vcard-technologies>
-                <vcard-chronological-facts match-height="match-exp" header-title="EXPERIENCIA" chronological-facts='[{"fecha":"Desarrollador","proyecto":"Vector Consultoría Tecnológica","puesto":"junio de 2014 – actualidad","description":"Desarrollo y mantenimiento de editor wysiwyg."},{"fecha":"Programador","proyecto":"REDK Software Engineering","puesto":"marzo de 2014 – junio de 2014","description":"Realización de desarrollos y mantenimientos en SugarCRM 6."},{"fecha":"Programador","proyecto":"GFI Informática","puesto":"octubre de 2011 – octubre de 2013","description":"Desarrollo de aplicaciones en Java y mantenimiento de aplicaciones en drupal."},{"fecha":"Helpdesk","proyecto":"Serwork Service Work Station S.L","puesto":"junio de 2007 – septiembre de 2007","description":"Asignado a Gestamp Toledo, S.L como helpdesk."}]'></vcard-chronological-facts>
+                <vcard-chronological-facts match-height="match-exp" header-title="EXPERIENCIA" chronological-facts='[{"fecha":"Desarrollador","proyecto":"Vector Consultoría Tecnológica","puesto":"junio de 2014 – actualidad","description":"Desarrollo y mantenimiento de framework de desarrollo frontend utilizando dojo."},{"fecha":"Programador","proyecto":"REDK Software Engineering","puesto":"marzo de 2014 – junio de 2014","description":"Realización de desarrollos y mantenimientos en SugarCRM 6."},{"fecha":"Programador","proyecto":"GFI Informática","puesto":"octubre de 2011 – octubre de 2013","description":"Desarrollo de aplicaciones en Java y mantenimiento de aplicaciones en drupal."},{"fecha":"Helpdesk","proyecto":"Serwork Service Work Station S.L","puesto":"junio de 2007 – septiembre de 2007","description":"Asignado a Gestamp Toledo, S.L como helpdesk."}]'></vcard-chronological-facts>
             </div>
         </div>
     </section>
@@ -59,36 +55,26 @@
         <div class="container-fluid">
             <div class="row">
                 <vcard-chronological-facts id="education" match-height="match-edu" header-title="EDUCACIÓN" chronological-facts='[{"fecha":"2005 – 2011","proyecto":"Universidad Complutense de Madrid","puesto":"Ingeniero Técnico de Informática en Sistemas","description":"Universidad Complutense de Madrid, campus de ciudad universitaria"}]'></vcard-chronological-facts>
-                <!-- Skills -->
-                <vcard-skills match-height="match-edu" list-skills='[{"skill":"Javascript","percent":90},{"skill":"NodeJS","percent":30},{"skill":"DOJO","percent":80},{"skill":"Git","percent":80}]'></vcard-skills>
-                <!-- end Skills -->
+                <vcard-download-cv match-height="match-edu"></vcard-download-cv>
             </div>
         </div>
     </section>
+    <!-- end Education -->
+    <!-- Project -->
     <section id="project">
         <div class="container-fluid">
             <div class="row">
-                <!-- Hire me -->
-                <!--vcard-hire-me match-height="match-prj"></vcard-hire-me-->
-                <!-- end Hire me -->
-                <vcard-project-detail projects-detail='[{"imageUrl":"images/projects/rate.png","title":"Rate","appUrl":"","githubUrl":"https://bitbucket.org/SKiryu/angularapp","technology":"AngularJS"},{"imageUrl":"images/projects/quiz.png","title":"Quiz","appUrl":"http://quiz-ylinlee-2015.herokuapp.com/","githubUrl":"https://github.com/ylinlee/servidorQuiz","technology":"NodeJS"},{"imageUrl":"images/projects/cv.png","title":"CV","appUrl":"#","githubUrl":"https://github.com/ylinlee/vcard-cv","technology":"Polymer"}]' match-height="match-prj"></vcard-project-detail>
-                <vcard-projects match-height="match-prj" header-title="MIS PROYECTOS PERSONALES" list-projects='[{"imageUrl":"images/technologies/angularjs.png","technology":"AngularJS","description":"Proyecto simple con MongoDB y servicios REST"},{"imageUrl":"images/technologies/polymer.png","technology":"Polymer","description":"Proyecto de pagina personal"},{"imageUrl":"images/technologies/javascript.png","technology":"Javascript","description":"Ejercicios de cursos"},{"imageUrl":"images/technologies/nodejs.png","technology":"NodeJS","description":"Aplicación de quiz sencilla"}]'></vcard-projects>
+                <vcard-skills match-height="match-prj" list-skills='[{"skill":"Javascript","percent":90},{"skill":"NodeJS","percent":30},{"skill":"DOJO","percent":80}]'></vcard-skills>
+                <vcard-projects match-height="match-prj" header-title="MIS PROYECTOS PERSONALES" list-projects='[{"imageUrl":"images/technologies/angularjs.png","technology":"AngularJS","description":"Proyecto simple con MongoDB y servicios REST","detail":{"projectTitle":"Rate App","description":"Aplicación realizada en angular para valorar personajes de star wars. Tiene parte de administración para gestionar los datos. Esta desplegada en heroku y ataca a una api rest con postgres. Para la gestion de dependencias se esta utilizando bower.","projectImage":"images/projects/rate.png","appUrl":"http://app-rate.herokuapp.com/#/","githubUrl":"https://github.com/ylinlee/rate-app","popupId":"rate-app"}},{"imageUrl":"images/technologies/polymer.png","technology":"Polymer","description":"Proyecto de pagina personal.","detail":{"projectTitle":"Vcard App","description":"Pagina web personal.  Esta implementado con la filosofia de webcomponents usando polymer. Para la gestion de dependencias se esta utilizando bower.","projectImage":"images/projects/cv.png","appUrl":"http://app-vcard.herokuapp.com","githubUrl":"https://github.com/ylinlee/vcard-cv","popupId":"vcard-app"}}]'></vcard-projects>
             </div>
-            <!-- end row -->
         </div>
-        <!-- end container -->
     </section>
-    <!-- end Services -->
-    <!-- end Education -->
+    <!-- end Project -->
+    <!-- Footer -->
     <vcard-footer></vcard-footer>
-    <!--script src="scripts/smoothscroll.min.js"></script-->
+    <!-- end Footer -->
     <script src="scripts/jquery.easing.1.3.js"></script>
-    <!--script src="scripts/jquery.magnific-popup.js"></script-->
     <script src="scripts/jquery.matchHeight.js"></script>
-    <!--script type="text/javascript" src="scripts/jquery.knob.min.js"></script>
-  <script type="text/javascript" src="scripts/jquery.appear.js"></script-->
-    <!--script type="text/javascript" src="scripts/jquery.countTo.js"></script>
-    <!--script type="text/javascript" src="scripts/theme-plugins.min.js"></script-->
     <!-- Custom Scripts -->
     <script src="scripts/main.js"></script>
 </body>

@@ -25,10 +25,10 @@ window.addEventListener('WebComponentsReady', function(e) {
     });
   }
 
-  var projectDetail = document.querySelector('vcard-project-detail');
+  /*var projectDetail = document.querySelector('vcard-project-detail');
   projectDetail.addEventListener('recalculateHeight', function (e) {
       matchElemHeight();
-  });
+  });*/
 
 });
 

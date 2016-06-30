@@ -9,8 +9,8 @@
     "vcard-preloader": "git://github.com/ylinlee/vcard-preloader.git",
     "vcard-chronological-facts": "git://github.com/ylinlee/vcard-chronological-facts.git",
     "vcard-skills": "git://github.com/ylinlee/vcard-skills.git",
+    "vcard-download-cv": "git://github.com/ylinlee/vcard-download-cv.git",
     "vcard-projects": "git://github.com/ylinlee/vcard-projects.git",
-    "vcard-project-detail": "git://github.com/ylinlee/vcard-project-detail.git",
     "vcard-technologies": "git://github.com/ylinlee/vcard-technologies.git",
     "iron-media-query": "PolymerElements/iron-media-query#1.0.8"
   },
